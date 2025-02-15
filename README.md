@@ -8,7 +8,7 @@ Features
 
 Implements a parallel merge sort using child processes.
 
-Uses pipes for inter-process communication.
+Uses pipes for inter-process communication (IPC).
 
 Efficiently distributes input data between child processes.
 
@@ -32,7 +32,7 @@ Alternatively, you can enter input manually and terminate with Ctrl+D:
 
 ./forksort
 
-Enter text, followed by:
+Example Input
 
 Heinrich
 Anton
@@ -40,9 +40,7 @@ Theodor
 Dora
 Hugo
 
-Press Ctrl+D to terminate input.
-
-Expected output:
+Expected Output
 
 Anton
 Dora
@@ -113,3 +111,12 @@ Known Issues and Limitations
 The program assumes that the input fits within the predefined buffer size (MAX_LINES and MAX_LEN).
 
 Sorting is performed in-memory, which may cause issues for extremely large inputs.
+
+License
+
+This project is released under the MIT License.
+
+Author
+
+This implementation was written to demonstrate process-based parallel sorting using inter-process communication and merge sort.
+
